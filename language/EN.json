@@ -13,8 +13,8 @@
         },
         "_plugin": {
             "INSTALL_DESC": "Install external plugins.",
-            "NEED_URL": "Please enter a URL! Example:",
-            "UNOFF": "⚠️ *Attention!* \n*The plugin you have installed is not official!*",
+            "NEED_URL": "```PLEASE ENTER A URL!```",
+            "UNOFF": "⚠️ ```ATTENTION``` \n```THE PLUGIN YOU HAVE INSTALLED IS NOT OFFICIAL!```",
             "INVALID_URL": "```Please enter a valid url!```",
             "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
             "INSTALLED": "*✅ Plugin has been successfully installed!*",
