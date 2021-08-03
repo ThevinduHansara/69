@@ -1006,41 +1006,6 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-     Asena.applyCMD({ pattern: 'dsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => {
-
-        const userName = match[1]
-
-        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data})
-
-        await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay?apikey=qamdi5652&query=${userName}`)
-          .then
-          (async (response) => {
-            const {
-              link,
-            } = response.data.result.audio
-            const {
-                status,
-              } = response.data
-            const {
-              title,
-              } = response.data.result.info
-
-            const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
-
-            const msg = `${status}`
-
-      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
-          
-      if (msg === '200') {
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3',quoted: message.data, mimetype: 'audio/mpeg'})
-        }
-          })
-          .catch(
-            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
-          )
-    }));
-
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
