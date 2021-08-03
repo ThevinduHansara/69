@@ -21,9 +21,9 @@ Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (asyn
         
         await message.client.sendMessage(
             message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/attachment_90380214.png"),
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/1961540.jpg"),
             MessageType.image, 
-            { caption: "\n*~______~ 𝔸 𝕃 𝕀 𝕍 𝔼 ~_____~*\n" }
+            { caption: "\n```BIP BOP!```\n```HEY, IT'S 69```" }
         )
     }
 }));
