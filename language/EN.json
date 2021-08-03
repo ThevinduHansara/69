@@ -16,13 +16,13 @@
             "NEED_URL": "```PLEASE ENTER A URL!```",
             "UNOFF": "⚠️ ```ATTENTION``` \n```THE PLUGIN YOU HAVE INSTALLED IS NOT OFFICIAL!```",
             "INVALID_URL": "```PLEASE ENTER A VALID URL!```",
-            "INVALID_PLUGIN": "```❌ YOUR PLUGIN IS INVALID!```\n```ERROR:```",
+            "INVALID_PLUGIN": "```❌ YOUR PLUGIN IS INVALID!```\n```ERROR```:",
             "INSTALLED": "```✅ PLUGIN HAS BEEN SUCCESSFULLY INSTALLED!```",
             "PLUGIN_DESC": "Shows the plugins you have installed.",
-            "INSTALLED_FROM_REMOTE": "```PLUGINS YOU INSTALL EXTERNALLY:```\n",
+            "INSTALLED_FROM_REMOTE": "```PLUGINS YOU INSTALL EXTERNALLY```:\n",
             "NO_PLUGIN": "```YOU HAVE NOT INSTALLED ANY EXTERNAL PLUGINS!```",
             "REMOVE_DESC": "Removes the plugin.",
-            "NEED_PLUGIN": "```PLEASE ENTER A PLUGIN! EXAMPLE:``` .plugin __test",
+            "NEED_PLUGIN": "```PLEASE ENTER A PLUGIN! EXAMPLE```: .plugin __test",
             "NOT_FOUND_PLUGIN": "```MAYBE YOU HAVE INSTALLED SUCH A PLUGIN, OR MAYBE NOT. BUT IT SURE ISN'T RIGHT NOW.```",
             "DELETED": "```✅ MODULE SUCCESSFULLY DELETED!```",
             "WARN": "Get plugins only from t.me/remasterplugin channel."
@@ -160,7 +160,7 @@
             "UNBLOCKED_UPPER": "```UNBLOCKED!```",
             "NEED_USER": "```GIVE ME AN USER!```",
             "JID_DESC": "Giving user's JID.",
-            "JID": "```JID ADDRESS OF``` @{} ```: {}```",
+            "JID": "```JID ADDRESS OF @{} : {}```",
             "JID_CHAT": "```CHAT'S JID ADDRESS: {}```"
         },
         "removebg": {
@@ -219,13 +219,13 @@
             "TAGADMİN": "Tags group admins.",
             "REPORT": "Sends reports to group admins.",
             "USER": "=== ```REPORT``` ===\n\n```USER:``` ",
-            "REASON": "\n```REASON:``` ",
+            "REASON": "\n```REASON```: ",
             "REPLY": "```PLEASE RESPOND TO USER'S MESSAGE TO REPORT!```"
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
             "UPDATE": "```YOUR BOT IS COMPLETELY UP-TO-DATE!```",
-            "NEW_UPDATE": "```NEW UPDATE AVAILABLE FOR BOT!```\n\n```Changes:```\n",
+            "NEW_UPDATE": "```NEW UPDATE AVAILABLE FOR BOT!```\n\n```CHANGES```:\n",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "```UPDATING...```",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
