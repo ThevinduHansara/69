@@ -462,9 +462,9 @@ if (config.WORKTYPE == 'private') {
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(320)
-            .save('./' + title + '.mp3')
+            .save('./' + title + '.m4a')
             .on('end', async () => {
-                const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
+                const writer = new ID3Writer(fs.readFileSync('./' + title + '.m4a'));
                 writer.setFrame('TIT2', arama[0].title)
                     .setFrame('TPE1', [arama[0].author.name])
                     .setFrame('APIC', {
@@ -929,9 +929,9 @@ else if (config.WORKTYPE == 'public') {
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(320)
-            .save('./' + title + '.mp3')
+            .save('./' + title + '.m4a')
             .on('end', async () => {
-                const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
+                const writer = new ID3Writer(fs.readFileSync('./' + title + '.m4a'));
                 writer.setFrame('TIT2', arama[0].title)
                     .setFrame('TPE1', [arama[0].author.name])
                     .setFrame('APIC', {
