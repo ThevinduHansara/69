@@ -114,15 +114,15 @@
             "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
             "NOT_SET_WELCOME": "```YOU DON'T SET THE WELCOME MESSAGE YET.```",
             "WELCOME_ALREADY_SETTED": "```✅ WELCOME MESSAGE ALREADY SET!```\n```MESSAGE: ```",
-            "NEED_WELCOME_TEXT": "*You must write a message to set up the welcome message.*\n*Example:* ```.welcome hi && hi#how are you?```",
-            "WELCOME_DELETED": "*✅ WELCOME MESSAGE HAS BEEN DELETED SUCCESSFULLY!*",
-            "WELCOME_SETTED": "*✅ Welcome message has been set successfully!*",
+            "NEED_WELCOME_TEXT": "```YOU MUST WRITE A MESSAGE TO SET UP THE WELCOME MESSAGE.```",
+            "WELCOME_DELETED": "```✅ WELCOME MESSAGE HAS BEEN DELETED SUCCESSFULLY!```",
+            "WELCOME_SETTED": "```✅ WELCOME MESSAGE HAS BEEN SET SUCCESSFULLY!```",
             "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
-            "NOT_SET_GOODBYE": "*You didn't set a goodbye message!*\n*To set:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_ALREADY_SETTED": "*✅ Goodbye message has been set!*\n*Message:* ```",
-            "NEED_GOODBYE_TEXT": "*You must write a message to set up the goodbye message.*\n*Example:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_DELETED": "*✅ Goodbye message has been deleted successfully!*",
-            "GOODBYE_SETTED": "*✅ Goodbye message has been setted successfully!*"
+            "NOT_SET_GOODBYE": "```YOU DIDN'T SET A GOODBYE MESSAGE!```",
+            "GOODBYE_ALREADY_SETTED": "```✅ GOODBYE MESSAGE HAS BEEN SET!```",
+            "NEED_GOODBYE_TEXT": "```YOU MUST WRITE A MESSAGE TO SET UP THE GOODBYE MESSAGE.```",
+            "GOODBYE_DELETED": "```✅ GOODBYE MESSAGE HAS BEEN DELETED SUCCESSFULLY!```",
+            "GOODBYE_SETTED": "```✅ GOODBYE MESSAGE HAS BEEN SETTED SUCCESSFULLY!```"
         },
         "lydia": {
             "ADDLYDIA_DESC": "Activates LYDIA (AI) for the user.",
