@@ -9,7 +9,7 @@
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
-            "description": "Type here yours Asena Session.",
+            "description": "",
             "required": true
         },
         "SUDO": {
