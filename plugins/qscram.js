@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Amdi = require('../events');
+const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
@@ -45,7 +45,7 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({ pattern: 'dsong ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
+    Asena.applyCMD({ pattern: 'dsong ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
@@ -86,7 +86,7 @@ if (config.WORKTYPE == 'private') {
 }
 else if (config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({ pattern: 'dsong ?(.*)', fromMe: false,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
+    Asena.applyCMD({ pattern: 'dsong ?(.*)', fromMe: false,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
