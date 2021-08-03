@@ -948,7 +948,7 @@ else if (config.WORKTYPE == 'public') {
             });
     }));
     
-     Asena.addCommand({ pattern: 'isong ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => {
+     Asena.addCommand({ pattern: 'dsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
