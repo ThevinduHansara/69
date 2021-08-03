@@ -27,7 +27,7 @@ const fs = require('fs');
 const https = require('https');
 const googleTTS = require('google-translate-tts');
 //=====================================================================================
-//============================== YOUTUBE ==============================================
+//============================== YOUTUOBE ==============================================
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
 const yts = require( 'yt-search' )
