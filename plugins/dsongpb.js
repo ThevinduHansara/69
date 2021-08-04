@@ -139,7 +139,7 @@ Asena.addCommand({pattern: 'dsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, 
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -161,7 +161,7 @@ Asena.addCommand({pattern: 'dsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, 
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
             });
     }));
