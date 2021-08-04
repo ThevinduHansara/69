@@ -5,10 +5,10 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'public') {
 
-Asena.addCommand({pattern: 'idka ?(.*)', fromMe: false,dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({pattern: 'fkalive ?(.*)', fromMe: false,dontAddCommandList: true }, (async (message, match) => {
 
 await axios.get(`${Config.ALIVEIMG}`, { responseType: 'arraybuffer' })
-await message.sendMessage(Buffer.from(githubscrap.data), MessageType.image, { mimetype: Mimetype.png, caption: '\n  '+Config.ALIVETEXT+'  \n' })
+await message.sendMessage(Buffer.from(githubscrap.data), MessageType.image, { mimetype: Mimetype.png, caption: Config.ALIVETEXT})
 
     }));
 }
