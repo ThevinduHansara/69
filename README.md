@@ -6,7 +6,7 @@
 
 ----
 
-###Setup
+##Setup
 <div align="center">
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@phaticusthiccy/WhatsAsena-QR)
