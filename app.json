@@ -21,16 +21,6 @@
             "required": true,
             "value": "en"
         },
-        "BGM_FILTER": {
-            "description": "",
-            "required": false,
-            "value": "true"
-        },
-        "AUTO_STICKER": {
-            "description": "",
-            "required": false,
-            "value": "true"
-        },
         "ANTİ_LİNK": {
             "description": "",
             "required": true,
