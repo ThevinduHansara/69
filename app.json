@@ -26,6 +26,11 @@
             "required": false,
             "value": "true"
         },
+        "MENU": {
+            "description": "",
+            "required": false,
+            "value": "true"
+        },
         "AUTO_STICKER": {
             "description": "",
             "required": false,
