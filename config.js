@@ -44,7 +44,7 @@ module.exports = {
     UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
     WORKTYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
-    ALIVETEXT: process.env.ALIVE_MESSAGE === undefined ?'```BIP BOP!```\n\n```HEY, IT'S BOT```' : process.env.ALIVE_MESSAGE,
+    ALIVETEXT: process.env.ALIVE_MESSAGE === undefined ?'```BIP BOP!```\n\n```HEY, I AM ALIVE!```' : process.env.ALIVE_MESSAGE,
     PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
