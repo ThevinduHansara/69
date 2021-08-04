@@ -19,13 +19,11 @@ Asena.addCommand({pattern: 'aalive', fromMe: false, desc: Lang.ALIVE_DESC}, (asy
     
     if (Config.ALIVEMSG == 'default') {
         
-        await axios.get(`${Config.ALIVEIMG}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(githubscrap.data), MessageType.image, {mimetype: Mimetype.png, caption: '            '+Config.ALIVETEXT+'\n'})
-    }));
-
-Asena.addCommand({pattern: 'ssssysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
-    const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
-    await message.sendMessage(
-        '```' + child + '```', MessageType.text
-    );
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/1961540.jpg"),
+            MessageType.image, 
+            { caption: Config.ALIVETEXT }
+        )
+    }
 }));
