@@ -19,9 +19,7 @@ Asena.addCommand({pattern: 'aalive', fromMe: false, desc: Lang.ALIVE_DESC}, (asy
     
     if (Config.ALIVEMSG == 'default') {
         
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/1961540.jpg"),
+            await axios.get(`${Config.ALIVEIMG}`, { responseType: 'arraybuffer' }),
             MessageType.image, 
             { caption: Config.ALIVETEXT }
         )
