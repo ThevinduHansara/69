@@ -1313,7 +1313,7 @@ FROM fusuf/whatsasena:latest
     #UPSTREAM_REPO = os.environ.get(
     #UPSTREAM_REPO = os.environ.get(
 RUN git clone https://github.com/twiiceuif/JulieMwol /root/JulieMwol
-WORKDIR /root/JulieMwol
+WORKDIR /root/JulieMwol/
 #3import logging
 #import os
 #import platform
