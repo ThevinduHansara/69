@@ -102,17 +102,17 @@
         "CP": {
             "description": "Caption",
             "required": true,
-            "value": "default"
+            "value": "```CREATED BY 69```"
         },
         "ALIVE_IMG": {
             "description": "Alive Image ; https://i.ibb.co",
             "required": true,
-            "value": "default"
+            "value": "https://ibb.co/m8tphkd.jpg"
         },
         "MENU": {
             "description": "Menu Header",
             "required": true,
-            "value": "default"
+            "value": "🎭 69 🎭"
         },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
@@ -121,7 +121,7 @@
         "ALIVE_MESSAGE": {
             "description": "",
             "required": false,
-            "value": "default"
+            "value": "```NOTHING OR NOTHING YOU CAN SEE!```"
         },
         "BAN_MESSAGE": {
             "description": "",
