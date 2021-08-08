@@ -102,17 +102,17 @@
         "CP": {
             "description": "Caption",
             "required": true,
-            "value": "✨ 69 ✨"
+            "value": "default"
         },
         "ALIVE_IMG": {
             "description": "Alive Image ; https://i.ibb.co",
             "required": true,
-            "value": "https://ibb.co/m8tphkd.jpg"
+            "value": "default"
         },
         "MENU": {
             "description": "Menu Header",
             "required": true,
-            "value": "✨ 69 ✨"
+            "value": "default"
         },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
