@@ -121,7 +121,7 @@
         "ALIVE_MESSAGE": {
             "description": "",
             "required": false,
-            "value": "```NOTHING OR NOTHING YOU CAN SEE!```"
+            "value": "default"
         },
         "BAN_MESSAGE": {
             "description": "",
