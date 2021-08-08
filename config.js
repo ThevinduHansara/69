@@ -1,6 +1,8 @@
 /* Copyright (C) 2020 Yusuf Usta.
+
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
+
 WhatsAsena - Yusuf Usta
 */
 
@@ -32,7 +34,7 @@ module.exports = {
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     AUTOSTICKER: process.env.AUTO_STICKER === undefined ? false : convertToBool(process.env.AUTO_STICKER),
     CAPTION_KEY: process.env.CP === undefined ?'```CREATED BY 69```' : process.env.CP,
-    MENUTEXT: process.env.MENU === undefined ?'🎭 69 🎭' : process.env.MENU,
+    MENUTEXT: process.env.MENU === undefined ?'🎭 ```69``` 🎭' : process.env.MENU,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
