@@ -2,7 +2,7 @@
     "name": "69",
     "description": "",
     "logo": "https://i.postimg.cc/Bv11kvHn/1961540.jpg",
-    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "keywords": ["whatsapp", "userbot", "69", "WhatsAsena", "bot", "api", "ai"],
     "repository": "https://github.com/ThevinduHansara/69",
     "website":   "",
     "success_url": "",
@@ -98,6 +98,21 @@
             "description": "",
             "required": true,
             "value": "false"
+        },
+        "CP": {
+            "description": "Caption",
+            "required": true,
+            "value": "✨ 69 ✨"
+        },
+        "ALIVE_IMG": {
+            "description": "Alive Image ; https://i.ibb.co",
+            "required": true,
+            "value": "https://ibb.co/m8tphkd.jpg"
+        },
+        "MENU": {
+            "description": "Menu Header",
+            "required": true,
+            "value": "✨ 69 ✨"
         },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
