@@ -121,7 +121,7 @@
         "ALIVE_MESSAGE": {
             "description": "",
             "required": false,
-            "value": "default"
+            "value": "```~ ALIVE ~```"
         },
         "BAN_MESSAGE": {
             "description": "",
