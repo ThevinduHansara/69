@@ -102,7 +102,7 @@
         "CP": {
             "description": "Caption",
             "required": true,
-            "value": "```CREATED BY 69```"
+            "value": "CREATED BY 69"
         },
         "ALIVE_IMG": {
             "description": "Alive Image ; https://i.ibb.co",
@@ -112,7 +112,7 @@
         "MENU": {
             "description": "Menu Header",
             "required": true,
-            "value": "🎭 ```69``` 🎭"
+            "value": "🎭 69 🎭"
         },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
