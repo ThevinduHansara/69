@@ -1,178 +1,67 @@
-{
-    "name": "69",
-    "description": "",
-    "logo": "https://i.postimg.cc/Bv11kvHn/1961540.jpg",
-    "keywords": ["whatsapp", "userbot", "69", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/ThevinduHansara/69",
-    "website":   "",
-    "success_url": "",
-    "stack": "container",
-    "env": {
-        "ASENA_SESSION": {
-            "description": "",
-            "required": true
-        },
-        "SUDO": {
-            "description": "",
-            "required": false
-        },
-        "LANGUAGE": {
-            "description": "",
-            "required": true,
-            "value": "en"
-        },
-        "ANTİ_LİNK": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "AUTO_BİO": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "HANDLERS": {
-            "description": "",
-            "required": true,
-            "value": "^[.!;]"
-        },
-        "FULL_EVA": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "NO_LOG": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "SEND_READ": {
-            "description": "",
-            "required": true,
-            "value": "true"
-        },
-        "HEROKU": {
-            "description": "",
-            "required": true,
-            "value": "true"
-        },
-        "HEROKU_API_KEY": {
-            "description": "",
-            "required": true
-        },
-        "MUTE_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "BLOCK_CHAT": {
-            "description": "",
-            "required": false,
-            "value": "false"
-        },
-        "UNMUTE_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "BLOCK_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "UNBLOCK_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "WORK_TYPE": {
-            "description": "",
-            "required": true,
-            "value": "public"
-        },
-        "HEROKU_APP_NAME": {
-            "description": "",
-            "required": true
-        },
-        "DEBUG": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "CP": {
-            "description": "Caption",
-            "required": true,
-            "value": "```CREATED BY 69```"
-        },
-        "ALIVE_IMG": {
-            "description": "Alive Image ; https://i.ibb.co",
-            "required": true,
-            "value": "https://ibb.co/m8tphkd.jpg"
-        },
-        "MENU": {
-            "description": "Menu Header",
-            "required": true,
-            "value": "🎭 69 🎭"
-        },
-        "REMOVE_BG_API_KEY": {
-            "description": "https://remove.bg",
-            "required": false
-        },
-        "ALIVE_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "```~ ALIVE ~```"
-        },
-        "BAN_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "ADD_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "KICKME_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "PROMOTE_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "DEMOTE_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "AFK_MESSAGE": {
-            "description": "",
-            "required": false,
-            "value": "default"
-        },
-        "GAN_IMAGE": {
-            "description": "",
-            "required": true,
-            "value": "https://i.hizliresim.com/loUtAb.jpg"
-        },
-        "NO_ONLINE": {
-            "description": "",
-            "required": false,
-            "value": "true"
-        },
-        "COFFEEHOUSE_API_KEY": {
-            "description": "",
-            "required": false,
-            "value": "true"
-        }
+/* Copyright (C) 2020 Yusuf Usta.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+WhatsAsena - Yusuf Usta
+*/
+
+const { Sequelize } = require('sequelize');
+const fs = require('fs');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+
+// Özel Fonksiyonlarımız
+function convertToBool(text, fault = 'true') {
+    return text === fault ? true : false;
+}
+
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : process.env.DATABASE_URL;
+DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
+
+module.exports = {
+    VERSION: 'v7.3.6',
+    CHANNEL: 'https://t.me/remasterplugin',
+    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
+    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
+    ALIVEIMG: process.env.ALIVE_IMG === undefined ? 'https://ibb.co/m8tphkd.jpg' : process.env.ALIVE_IMG,
+    AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
+    LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
+    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? '```~ ALIVE ~```' : process.env.ALIVE_MESSAGE,
+    KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
+    BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
+    MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    AUTOSTICKER: process.env.AUTO_STICKER === undefined ? false : convertToBool(process.env.AUTO_STICKER),
+    CAPTION_KEY: process.env.CP === undefined ?'```CREATED BY 69```' : process.env.CP,
+    MENUTEXT: process.env.MENU === undefined ?'🎭 69 🎭' : process.env.MENU,
+    NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
+    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
+    BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
+    UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
+    UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
+    WORKTYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
+    PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
+    DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
+    BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
+    AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
+    HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
+    SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
+    BRANCH: 'master',
+    HEROKU: {
+        HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
+        API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
+        APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
-    "addons": [{
-      "plan": "heroku-postgresql"
-    }],
-    "buildpacks": [{
-      "url": "heroku-community/apt"
-      }]
-  }
+    DATABASE_URL: DATABASE_URL,
+    DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
+    NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
+    SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+    DEBUG: DEBUG,
+    COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
+    WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
+    SUPPORT: "905524317852-1612300121",
+    SUPPORT2: "905511384572-1617736751",
+    SUPPORT3: "905511384572-1621015274"
+};
